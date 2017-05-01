@@ -1,0 +1,1 @@
+'abcdefg' findBetweenSubstrings: 'bcd'
