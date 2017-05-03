@@ -36433,3 +36433,4640 @@ false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
 Processor terminateActive ] in BlockClosure>>newProcess
 -------------------------------------------------------------------------------
 
+THERE_BE_DRAGONS_HERE
+
+2 May 2017 2:34:44.88 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Process>>terminate
+	Receiver: a Process in Process>>terminate
+	Arguments and temporary variables: 
+		ctxt: 	nil
+		unwindBlock: 	nil
+		oldList: 	nil
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>terminate
+		priority: 	40
+		myList: 	nil
+		name: 	nil
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+
+
+NECController>>stopCompletionDelay
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+NECController>>closeMenu
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+MessageSend>>value
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg: 	a MorphLostFocus
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg1: 	a MorphLostFocus
+		arg2: 	an Announcer
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+BlockClosure>>on:fork:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | ex pass ]
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		index: 	1
+		subscription: 	an AnnouncementSubscription
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ subscription deliver: anAnnouncement ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self deliver: anAnnouncement to: subs startingAt: index + 1 ]
+		complete: 	nil
+		result: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SubscriptionRegistry>>deliver:to:startingAt:
+		startpc: 	54
+		numArgs: 	0
+
+
+SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		subscription: 	an AnnouncementSubscription
+		index: 	1
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:to:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		interestedSubscriptions: 	an Array(an AnnouncementSubscription an AnnouncementSu...etc...
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+Announcer>>announce:
+	Receiver: an Announcer
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+
+
+RubEditingArea(Morph)>>doAnnounce:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		aBoolean: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+HandMorph>>newKeyboardFocus:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		aMorphOrNil: 	nil
+		oldFocus: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+HandMorph>>releaseKeyboardFocus
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+		hand: 	a HandMorph(757873920)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a HandMorph(757873920))
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(a HandMorph(757873920))
+
+WorldState>>handsDo:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(757873920))
+		viewBox: 	(0@0) corner: (976@721)
+		canvas: 	nil
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap()
+		lastStepTime: 	8614201
+		lastStepMessage: 	nil
+		lastCycleTime: 	8642946
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(563423488)))
+		lastAlarmTime: 	8642926
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph class>>startUp
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		world: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+WorldMorph class(Behavior)>>startUp:
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		resuming: 	true
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(WorldMorph)
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#WorldMorph
+
+
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ aBlock value: each ]
+	Arguments and temporary variables: 
+		exception: 	Exception
+		handlerAction: 	[ :error | self errorHandler handleError: error ]
+	Receiver's instance variables: 
+		outerContext: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | ...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self e...etc...
+		index: 	45
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('0bbb3ca3-06af-4d83-b012-dabdd2474cd0')
+		creationTime: 	2017-05-02T14:34:44.643281+09:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		save: 	true
+		quit: 	false
+		isImageStarting: 	true
+		snapshotResult: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+
+--- The full stack ---
+Process>>terminate
+NECController>>stopCompletionDelay
+NECController>>closeMenu
+MessageSend>>value
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+Announcer>>announce:
+RubEditingArea(Morph)>>doAnnounce:
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+RubEditingArea(Morph)>>keyboardFocusChange:
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+HandMorph>>newKeyboardFocus:
+HandMorph>>releaseKeyboardFocus
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldMorph>>viewBox:
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+WorldMorph class>>startUp
+WorldMorph class(Behavior)>>startUp:
+ClassSessionHandler>>startup:
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+SmalltalkImage>>snapshot:andQuit:
+[ (Smalltalk snapshot: true andQuit: false)
+	ifFalse: [ UIManager default inform: 'Image saved' ] ] in ToolShortcutsCategory>>saveImage
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+Set>>do:
+ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:inCategories:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:inCategories:
+KmGlobalDispatcher>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+
+2 May 2017 2:35:28.091724 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Process>>terminate
+	Receiver: a Process in Process>>terminate
+	Arguments and temporary variables: 
+		ctxt: 	nil
+		unwindBlock: 	nil
+		oldList: 	nil
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>terminate
+		priority: 	40
+		myList: 	nil
+		name: 	nil
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+
+
+NECController>>stopCompletionDelay
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+NECController>>closeMenu
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+MessageSend>>value
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg: 	a MorphLostFocus
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg1: 	a MorphLostFocus
+		arg2: 	an Announcer
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+BlockClosure>>on:fork:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | ex pass ]
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		index: 	1
+		subscription: 	an AnnouncementSubscription
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ subscription deliver: anAnnouncement ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self deliver: anAnnouncement to: subs startingAt: index + 1 ]
+		complete: 	nil
+		result: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SubscriptionRegistry>>deliver:to:startingAt:
+		startpc: 	54
+		numArgs: 	0
+
+
+SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		subscription: 	an AnnouncementSubscription
+		index: 	1
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:to:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		interestedSubscriptions: 	an Array(an AnnouncementSubscription an AnnouncementSu...etc...
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+Announcer>>announce:
+	Receiver: an Announcer
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+
+
+RubEditingArea(Morph)>>doAnnounce:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		aBoolean: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+HandMorph>>newKeyboardFocus:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		aMorphOrNil: 	nil
+		oldFocus: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+HandMorph>>releaseKeyboardFocus
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+		hand: 	a HandMorph(757873920)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a HandMorph(757873920))
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(a HandMorph(757873920))
+
+WorldState>>handsDo:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(757873920))
+		viewBox: 	(0@0) corner: (976@721)
+		canvas: 	nil
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap()
+		lastStepTime: 	8614201
+		lastStepMessage: 	nil
+		lastCycleTime: 	8642946
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(563423488)))
+		lastAlarmTime: 	8642926
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph class>>startUp
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		world: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+WorldMorph class(Behavior)>>startUp:
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		resuming: 	true
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(WorldMorph)
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#WorldMorph
+
+
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ aBlock value: each ]
+	Arguments and temporary variables: 
+		exception: 	Exception
+		handlerAction: 	[ :error | self errorHandler handleError: error ]
+	Receiver's instance variables: 
+		outerContext: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | ...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self e...etc...
+		index: 	45
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('b580aa91-ad2a-41f7-8392-c9dedf4fc5eb')
+		creationTime: 	2017-05-02T14:35:27.853311+09:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		save: 	true
+		quit: 	false
+		isImageStarting: 	true
+		snapshotResult: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+
+--- The full stack ---
+Process>>terminate
+NECController>>stopCompletionDelay
+NECController>>closeMenu
+MessageSend>>value
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+Announcer>>announce:
+RubEditingArea(Morph)>>doAnnounce:
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+RubEditingArea(Morph)>>keyboardFocusChange:
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+HandMorph>>newKeyboardFocus:
+HandMorph>>releaseKeyboardFocus
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldMorph>>viewBox:
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+WorldMorph class>>startUp
+WorldMorph class(Behavior)>>startUp:
+ClassSessionHandler>>startup:
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+SmalltalkImage>>snapshot:andQuit:
+[ (Smalltalk snapshot: true andQuit: false)
+	ifFalse: [ UIManager default inform: 'Image saved' ] ] in ToolShortcutsCategory>>saveImage
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+Set>>do:
+ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:inCategories:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:inCategories:
+KmGlobalDispatcher>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+
+3 May 2017 8:47:56.263749 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Process>>terminate
+	Receiver: a Process in Process>>terminate
+	Arguments and temporary variables: 
+		ctxt: 	nil
+		unwindBlock: 	nil
+		oldList: 	nil
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>terminate
+		priority: 	40
+		myList: 	nil
+		name: 	nil
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+
+
+NECController>>stopCompletionDelay
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+NECController>>closeMenu
+	Receiver: a NECController
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		model: 	a RubScrolledTextModel
+		menuMorph: 	nil
+		editor: 	a RubSmalltalkEditor
+		context: 	nil
+		inverseMapping: 	a Dictionary($"->$" $'->$' $)->$( $]->$[ $}->${ )
+		completionDelay: 	a Process in Process>>terminate
+
+
+MessageSend>>value
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg: 	a MorphLostFocus
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+MessageSend>>cull:cull:
+	Receiver: MessageSend(#closeMenu -> a NECController)
+	Arguments and temporary variables: 
+		arg1: 	a MorphLostFocus
+		arg2: 	an Announcer
+	Receiver's instance variables: 
+		receiver: 	a NECController
+		selector: 	#closeMenu
+		arguments: 	#()
+
+
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+BlockClosure>>on:do:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | 
+| copy onDoCtx process handler bottom thisCtx |
+onDoCtx...etc...
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+BlockClosure>>on:fork:
+	Receiver: [ action cull: anAnnouncement cull: announcer ]
+	Arguments and temporary variables: 
+		exception: 	UnhandledError
+		handlerAction: 	[ :ex | ex pass ]
+	Receiver's instance variables: 
+		outerContext: 	AnnouncementSubscription>>deliver:
+		startpc: 	47
+		numArgs: 	0
+
+
+AnnouncementSubscription>>deliver:
+	Receiver: an AnnouncementSubscription
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		announcer: 	an Announcer
+		announcementClass: 	MorphLostFocus
+		subscriber: 	a NECController
+		action: 	MessageSend(#closeMenu -> a NECController)
+
+
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		index: 	1
+		subscription: 	an AnnouncementSubscription
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+BlockClosure>>ifCurtailed:
+	Receiver: [ subscription deliver: anAnnouncement ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self deliver: anAnnouncement to: subs startingAt: index + 1 ]
+		complete: 	nil
+		result: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SubscriptionRegistry>>deliver:to:startingAt:
+		startpc: 	54
+		numArgs: 	0
+
+
+SubscriptionRegistry>>deliver:to:startingAt:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+		startIndex: 	1
+		subscription: 	an AnnouncementSubscription
+		index: 	1
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:to:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		subs: 	an Array(an AnnouncementSubscription an AnnouncementSubscription an Annou...etc...
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+SubscriptionRegistry>>deliver:
+	Receiver: a SubscriptionRegistry
+	Arguments and temporary variables: 
+		interestedSubscriptions: 	an Array(an AnnouncementSubscription an AnnouncementSu...etc...
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		subscriptions: 	an IdentitySet(an AnnouncementSubscription an AnnouncementSubscr...etc...
+		monitor: 	a Semaphore()
+
+
+Announcer>>announce:
+	Receiver: an Announcer
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+
+
+RubEditingArea(Morph)>>doAnnounce:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anAnnouncement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+		announcement: 	a MorphLostFocus
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		gotFocus: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		aBoolean: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@69)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1023428096) a RubCursor(56342348...etc...
+		fullBounds: 	(0@0) corner: (690@69)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(358@49)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+HandMorph>>newKeyboardFocus:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		aMorphOrNil: 	nil
+		oldFocus: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+HandMorph>>releaseKeyboardFocus
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(129@159.0) corner: (145@175.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(129@159) mouseOver nil nil]
+		targetOffset: 	(358@49)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 8639334 129 159 0 0 0 1)
+		lastKeyScanCode: 	1
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	9
+
+
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+		hand: 	a HandMorph(757873920)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a HandMorph(757873920))
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(a HandMorph(757873920))
+
+WorldState>>handsDo:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aBlock: 	[ :hand | hand releaseKeyboardFocus ]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(757873920))
+		viewBox: 	(0@0) corner: (976@721)
+		canvas: 	nil
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap()
+		lastStepTime: 	8614201
+		lastStepMessage: 	nil
+		lastCycleTime: 	8642946
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(563423488)))
+		lastAlarmTime: 	8642926
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>viewBox:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		newViewBox: 	(0@0) corner: (976@721)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph class>>startUp
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		world: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+WorldMorph class(Behavior)>>startUp:
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+		resuming: 	true
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65549
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(WorldMorph)
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#WorldMorph
+
+
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ aBlock value: each ]
+	Arguments and temporary variables: 
+		exception: 	Exception
+		handlerAction: 	[ :error | self errorHandler handleError: error ]
+	Receiver's instance variables: 
+		outerContext: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | ...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+		each: 	a ClassSessionHandler(WorldMorph)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self e...etc...
+		index: 	45
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay) a ClassSessionHa...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		aList: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Delay...etc...
+		aBlock: 	[ :each | each startup: isImageStarting ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		isImageStarting: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ] [ self manag...etc...
+		id: 	an UUID('6e786e59-8f2d-4808-888b-25c27a5dad41')
+		creationTime: 	2017-05-03T20:47:55.98431+09:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		save: 	true
+		quit: 	false
+		isImageStarting: 	true
+		snapshotResult: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+
+--- The full stack ---
+Process>>terminate
+NECController>>stopCompletionDelay
+NECController>>closeMenu
+MessageSend>>value
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: anAnnouncement cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ subscription deliver: anAnnouncement ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+Announcer>>announce:
+RubEditingArea(Morph)>>doAnnounce:
+RubEditingArea(Morph)>>announceKeyboardFocusChange:
+RubEditingArea(Morph)>>keyboardFocusChange:
+RubEditingArea(RubAbstractTextArea)>>keyboardFocusChange:
+HandMorph>>newKeyboardFocus:
+HandMorph>>releaseKeyboardFocus
+[ :hand | hand releaseKeyboardFocus ] in WorldMorph>>viewBox:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldMorph>>viewBox:
+WorldMorph(PasteUpMorph)>>restoreMorphicDisplay
+WorldMorph class>>startUp
+WorldMorph class(Behavior)>>startUp:
+ClassSessionHandler>>startup:
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+[ aBlock value: each ] in [ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :each | 
+[ aBlock value: each ]
+	on: Exception
+	do: [ :error | self errorHandler handleError: error ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+SmalltalkImage>>snapshot:andQuit:
+[ (Smalltalk snapshot: true andQuit: false)
+	ifFalse: [ UIManager default inform: 'Image saved' ] ] in ToolShortcutsCategory>>saveImage
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+Set>>do:
+ToolShortcutsCategory(KMCategory)>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:inCategories:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:inCategories:
+KmGlobalDispatcher>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: ThreadSafeTranscript>>show
+3 May 2017 8:58:16.070877 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #show
+	Receiver: Transcript
+	Arguments and temporary variables: 
+		aMessage: 	show
+		exception: 	MessageNotUnderstood: ThreadSafeTranscript>>show
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(783463168) a RubPluggableTextMorph...etc...
+		announceur: 	an Announcer
+		stream: 	a WriteStream
+		accessSemaphore: 	a Mutex
+		deferredClear: 	false
+		deferredEndEntry: 	false
+		stepContents: 	'128'
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		game: 	a LOGame(716683520)
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| game |
+game := LOGame new.
+Transcript show game cellsPerSide...etc...
+		itsSelection: 	a Text for '| game |
+game := LOGame new.
+Transcript show game cel...etc...
+		itsSelectionString: 	'| game |
+game := LOGame new.
+Transcript show game cellsPer...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| game |
+	game := LOGame new.
+	^ Transcript show game cellsPerSide
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(302330368)
+		secondArg: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(302330368)
+		secondArg: 	a RubEditingArea(302330368)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(302330368)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(302330368)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(302330368)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(302330368)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#MorphFocusCtrlNavigation) a...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	4
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#MorphFocusCtrlNavigat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(302330368)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(202@111)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(202@111)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		timeStamp: 	620323
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(-361@55.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(202@111)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(202@111)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(-80@276.0) corner: (-64@292.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(-80@276.0) corner: (-64@292.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(-80@276) mouseOver nil nil]
+		targetOffset: 	(82.99998474121094@165.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 619895 -80 276 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	(0@0) corner: (976@721)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(-80@276.0) corner: (-64@292.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(-80@276.0) corner: (-64@292.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(-80@276) mouseOver nil nil]
+		targetOffset: 	(82.99998474121094@165.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 619895 -80 276 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(-80@276.0) corner: (-64@292.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(-80@276.0) corner: (-64@292.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(-80@276) mouseOver nil nil]
+		targetOffset: 	(82.99998474121094@165.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 619895 -80 276 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #show
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: ThreadSafeTranscript>>show
+3 May 2017 8:58:49.188465 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #show
+	Receiver: Transcript
+	Arguments and temporary variables: 
+		aMessage: 	show
+		exception: 	MessageNotUnderstood: ThreadSafeTranscript>>show
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(783463168) a RubPluggableTextMorph...etc...
+		announceur: 	an Announcer
+		stream: 	a WriteStream
+		accessSemaphore: 	a Mutex
+		deferredClear: 	false
+		deferredEndEntry: 	false
+		stepContents: 	'128'
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		game: 	a LOGame(403394560)
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'
+| game |
+game := LOGame new.
+Transcript show game cellsPerSid...etc...
+		itsSelection: 	a Text for '
+| game |
+game := LOGame new.
+Transcript show game ce...etc...
+		itsSelectionString: 	'
+| game |
+game := LOGame new.
+Transcript show game cellsPe...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| game |
+	game := LOGame new.
+	^ Transcript show game cellsPerSide
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(302330368)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(302330368)
+		secondArg: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(302330368)
+		secondArg: 	a RubEditingArea(302330368)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(302330368)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(302330368)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(302330368)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(302330368)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#MorphFocusCtrlNavigation) a...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	4
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#MorphFocusCtrlNavigat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(302330368)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#MorphFocusCtrlNavigation) aKMCategoryTarget(#...etc...
+		morph: 	a RubEditingArea(302330368)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(130@132)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(130@132)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(302330368)
+	Receiver's instance variables: 
+		timeStamp: 	653441
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(183@148.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(130@132)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(302330368)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@145)
+		owner: 	a TransformWithLayoutMorph(321528320)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(863280384) a RubCursor(563423488...etc...
+		fullBounds: 	(0@0) corner: (690@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (1054743296) [other:  (announcer -> an Announcer) (...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(185521920)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(563423488)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(302330368)
+		mouseDownPoint: 	(130@132)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(464@369.0) corner: (480@385.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(464@369.0) corner: (480@385.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(464@369) mouseOver nil nil]
+		targetOffset: 	(130@132)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 645232 464 369 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@721)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(600748288) a Nau...etc...
+		fullBounds: 	(0@0) corner: (976@721)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(464@369.0) corner: (480@385.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(464@369.0) corner: (480@385.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(464@369) mouseOver nil nil]
+		targetOffset: 	(130@132)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 645232 464 369 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(302330368)
+		aBlock: 	[ self keyboardFocus: nil ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(464@369.0) corner: (480@385.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(464@369.0) corner: (480@385.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(302330368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(464@369) mouseOver nil nil]
+		targetOffset: 	(130@132)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 645232 464 369 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #show
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+TestFailure: Got 11 instead of 10.
+3 May 2017 9:28:18.805645 pm
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+LOGameTest(TestAsserter)>>assert:description:
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+		aBooleanOrBlock: 	false
+		aStringOrBlock: 	[ self comparingStringBetween: actual and: expected ]
+		aString: 	'Got 11 instead of 10.'
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+LOGameTest(TestAsserter)>>assert:equals:
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+		actual: 	11
+		expected: 	10
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+LOGameTest>>testCellsPerSide
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+		game: 	a LOGame(165111040)
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+LOGameTest(TestCase)>>performTest
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+[ self setUp.
+self performTest ] in LOGameTest(TestCase)>>runCase
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ self setUp.
+self performTest ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self tearDown.
+self cleanUpInstanceVariables ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	LOGameTest(TestCase)>>runCase
+		startpc: 	57
+		numArgs: 	0
+
+
+LOGameTest(TestCase)>>runCase
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	nil
+
+
+[ aTestCase announce: TestCaseStarted withResult: self.
+aTestCase runCase.
+aTestCase announce: TestCaseEnded withResult: self.
+self addPass: aTestCase ] in TestResult>>runCaseForDebug:
+	Receiver: 1 run, 0 passes, 0 skipped, 0 expected failures, 1 failures, 0 errors, 0 unexpected passes...etc...
+	Arguments and temporary variables: 
+		aTestCase: 	LOGameTest>>#testCellsPerSide
+	Receiver's instance variables: 
+		timeStamp: 	2017-05-03T21:28:18.761575+09:00
+		failures: 	a Set(LOGameTest>>#testCellsPerSide)
+		errors: 	an OrderedCollection()
+		passed: 	an OrderedCollection()
+		skipped: 	an OrderedCollection()
+
+
+BlockClosure>>on:do:
+	Receiver: [ aTestCase announce: TestCaseStarted withResult: self.
+aTestCase runCase.
+aTestCase annou...etc...
+	Arguments and temporary variables: 
+		exception: 	an ExceptionSet
+		handlerAction: 	[ :ex | 
+ex sunitAnnounce: aTestCase toResult: self.
+ex pass ]
+	Receiver's instance variables: 
+		outerContext: 	TestResult>>runCaseForDebug:
+		startpc: 	74
+		numArgs: 	0
+
+
+TestResult>>runCaseForDebug:
+	Receiver: 1 run, 0 passes, 0 skipped, 0 expected failures, 1 failures, 0 errors, 0 unexpected passes...etc...
+	Arguments and temporary variables: 
+		aTestCase: 	LOGameTest>>#testCellsPerSide
+	Receiver's instance variables: 
+		timeStamp: 	2017-05-03T21:28:18.761575+09:00
+		failures: 	a Set(LOGameTest>>#testCellsPerSide)
+		errors: 	an OrderedCollection()
+		passed: 	an OrderedCollection()
+		skipped: 	an OrderedCollection()
+
+
+[ result runCaseForDebug: self ] in LOGameTest(TestCase)>>debug
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+		result: 	1 run, 0 passes, 0 skipped, 0 expected failures, 1 failures, 0 errors, ...etc...
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	#()
+
+
+BlockClosure>>ensure:
+	Receiver: [ result runCaseForDebug: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ self classForTestResource resetResources: self resources.
+result upda...etc...
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	LOGameTest(TestCase)>>debug
+		startpc: 	50
+		numArgs: 	0
+
+
+LOGameTest(TestCase)>>debug
+	Receiver: LOGameTest>>#testCellsPerSide
+	Arguments and temporary variables: 
+		result: 	1 run, 0 passes, 0 skipped, 0 expected failures, 1 failures, 0 errors, ...etc...
+	Receiver's instance variables: 
+		testSelector: 	#testCellsPerSide
+		expectedFails: 	#()
+
+
+LOGameTest class(TestCase class)>>debug:
+	Receiver: LOGameTest
+	Arguments and temporary variables: 
+		aSymbol: 	#testCellsPerSide
+	Receiver's instance variables: 
+		superclass: 	TestCase
+		methodDict: 	a MethodDictionary(#testCellsPerSide->LOGameTest>>#testCellsPerSide...etc...
+		format: 	65538
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGameTest
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut-Tests'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		history: 	a Dictionary(#errors->a Set() #failures->a Set() #passed->a Set(#testC...etc...
+
+
+NautilusUI class>>runTestForAMethod:notifying:
+	Receiver: NautilusUI
+	Arguments and temporary variables: 
+		aMethod: 	LOGameTest>>#testCellsPerSide
+		aBoolean: 	true
+		testMethod: 	LOGameTest>>#testCellsPerSide
+		testClass: 	LOGameTest
+		testResult: 	nil
+		color: 	nil
+	Receiver's instance variables: 
+		superclass: 	AbstractNautilusUI
+		methodDict: 	a MethodDictionary(size 182)
+		format: 	65558
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#NautilusUI
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#Nautilus
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+NautilusUI>>runTestForAMethod:notifying:
+	Receiver: a NautilusUI
+	Arguments and temporary variables: 
+		aMethod: 	LOGameTest>>#testCellsPerSide
+		aBoolean: 	true
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		announceur: 	nil
+		model: 	a Nautilus
+		window: 	a NautilusWindow(495917312)
+		sourceCodePanel: 	a PanelMorph(410809600)
+		fullDisplayedComment: 	false
+		sourceCodeContainer: 	a PanelMorph(318363392)
+		shouldUpdateTitle: 	true
+		contentSelection: 	a Text for ''
+		acceptor: 	a MethodDefinitionAcceptor
+		classCommentTextModel: 	a RubScrolledTextModel
+		commentWidget: 	nil
+		sourceTextWidget: 	a RubScrolledTextMorph(383216128)
+		sourceCodeSelectionInterval: 	(1 to: 0)
+		sourceTextModel: 	a RubScrolledTextModel
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageWidget
+		packagePatternString: 	'PBE'
+		packagePattern: 	a RxMatcher
+		searchWidget: 	a SearchMorph(152562688)
+
+
+[ :each | 
+each isTestMethod
+	ifTrue: [ self runTestForAMethod: each notifying: aBoolean ] ] in NautilusUI(AbstractNautilusUI)>>runTestForMethods:notifying:
+	Receiver: a NautilusUI
+	Arguments and temporary variables: 
+		aCollection: 	an OrderedCollection(LOGameTest>>#testCellsPerSide)
+		aBoolean: 	true
+		each: 	LOGameTest>>#testCellsPerSide
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		announceur: 	nil
+		model: 	a Nautilus
+		window: 	a NautilusWindow(495917312)
+		sourceCodePanel: 	a PanelMorph(410809600)
+		fullDisplayedComment: 	false
+		sourceCodeContainer: 	a PanelMorph(318363392)
+		shouldUpdateTitle: 	true
+		contentSelection: 	a Text for ''
+		acceptor: 	a MethodDefinitionAcceptor
+		classCommentTextModel: 	a RubScrolledTextModel
+		commentWidget: 	nil
+		sourceTextWidget: 	a RubScrolledTextMorph(383216128)
+		sourceCodeSelectionInterval: 	(1 to: 0)
+		sourceTextModel: 	a RubScrolledTextModel
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageWidget
+		packagePatternString: 	'PBE'
+		packagePattern: 	a RxMatcher
+		searchWidget: 	a SearchMorph(152562688)
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(LOGameTest>>#testCellsPerSide)
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | 
+each isTestMethod
+	ifTrue: [ self runTestForAMethod: each no...etc...
+		index: 	1
+	Receiver's instance variables: 
+		array: 	{LOGameTest>>#testCellsPerSide. nil. nil. nil. nil. nil. nil. nil. nil. ...etc...
+		firstIndex: 	1
+		lastIndex: 	1
+
+
+NautilusUI(AbstractNautilusUI)>>runTestForMethods:notifying:
+	Receiver: a NautilusUI
+	Arguments and temporary variables: 
+		aCollection: 	an OrderedCollection(LOGameTest>>#testCellsPerSide)
+		aBoolean: 	true
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a CategoryWidget a MethodWidget a ClassWidget a P...etc...
+		announceur: 	nil
+		model: 	a Nautilus
+		window: 	a NautilusWindow(495917312)
+		sourceCodePanel: 	a PanelMorph(410809600)
+		fullDisplayedComment: 	false
+		sourceCodeContainer: 	a PanelMorph(318363392)
+		shouldUpdateTitle: 	true
+		contentSelection: 	a Text for ''
+		acceptor: 	a MethodDefinitionAcceptor
+		classCommentTextModel: 	a RubScrolledTextModel
+		commentWidget: 	nil
+		sourceTextWidget: 	a RubScrolledTextMorph(383216128)
+		sourceCodeSelectionInterval: 	(1 to: 0)
+		sourceTextModel: 	a RubScrolledTextModel
+		categoryWidget: 	a CategoryWidget
+		methodWidget: 	a MethodWidget
+		classWidget: 	a ClassWidget
+		packageWidget: 	a PackageWidget
+		packagePatternString: 	'PBE'
+		packagePattern: 	a RxMatcher
+		searchWidget: 	a SearchMorph(152562688)
+
+
+[ target runTestForMethods: selectedMethods notifying: true ] in MethodWidget class>>elementsMenu:
+	Receiver: MethodWidget
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		selectedMethods: 	an OrderedCollection(LOGameTest>>#testCellsPerSide)
+		tmp: 	nil
+		target: 	a NautilusUI
+	Receiver's instance variables: 
+		superclass: 	AbstractWidget
+		methodDict: 	a MethodDictionary(#buildMethodsList->MethodWidget>>#buildMethodsLi...etc...
+		format: 	65542
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#MethodWidget
+		classPool: 	a Dictionary(#MethodsIconsCache->a WeakIdentityKeyDictionary(LOGameT...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Nautilus-Widgets'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ target runTestForMethods: selectedMethods notifying: true ]
+	Arguments and temporary variables: 
+		anArg: 	a NautilusUI
+	Receiver's instance variables: 
+		outerContext: 	MethodWidget class>>elementsMenu:
+		startpc: 	862
+		numArgs: 	0
+
+
+[ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ selArgCount = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: evt) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		evt: 	[(771@326) mouseUp 2423015 nil]
+		w: 	a WorldMorph(562956288) [world]
+		selArgCount: 	1
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+BlockClosure>>ensure:
+	Receiver: [ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := select...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ oldcursor show ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+		startpc: 	138
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r100000000000000000000...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(se...etc...
+		oldcursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		evt: 	[(771@326) mouseUp 2423015 nil]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		evt: 	[(771@326) mouseUp 2423015 nil]
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(771@326) mouseUp 2423015 nil]
+	Arguments and temporary variables: 
+		anObject: 	a ToggleMenuItemMorph(432049408)'Run tests'
+	Receiver's instance variables: 
+		timeStamp: 	2423015
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(771@326)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+ToggleMenuItemMorph(Morph)>>handleEvent:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+		aMorph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+		localEvt: 	nil
+		index: 	1
+		child: 	nil
+		morphs: 	#()
+		inside: 	true
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(771@326) mouseUp 2423015 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	2423015
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(771@326)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+		aMorph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+		aMorph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+	Receiver: a ToggleMenuItemMorph(432049408)'Run tests'
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(583.0@316.0) corner: (819.0@333.0)
+		owner: 	a MenuMorph(231596032)
+		submorphs: 	#()
+		fullBounds: 	(583.0@316.0) corner: (819.0@333.0)
+		color: 	Color black
+		extension: 	a MorphExtension (26696960)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Run tests'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	[ target runTestForMethods: selectedMethods notifying: true ]
+		selector: 	#cull:
+		arguments: 	an Array(a NautilusUI)
+		icon: 	Form(16x1x8)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	'j, m'
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+		aMorph: 	a MenuMorph(231596032)
+		localEvt: 	[(771@326) mouseUp 2423015 nil]
+		index: 	13
+		child: 	a ToggleMenuItemMorph(432049408)'Run tests'
+		morphs: 	an Array(a ToggleMenuItemMorph(110007552)'Refactoring' a ToggleMenuItem...etc...
+		inside: 	false
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(771@326) mouseUp 2423015 nil]
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(432049408)'Run tests'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(771@326) mouseUp 2423015 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	2423015
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(771@326)
+		handler: 	nil
+		wasHandled: 	false
+		whichButton: 	4
+
+
+
+--- The full stack ---
+LOGameTest(TestAsserter)>>assert:description:
+LOGameTest(TestAsserter)>>assert:equals:
+LOGameTest>>testCellsPerSide
+LOGameTest(TestCase)>>performTest
+[ self setUp.
+self performTest ] in LOGameTest(TestCase)>>runCase
+BlockClosure>>ensure:
+LOGameTest(TestCase)>>runCase
+[ aTestCase announce: TestCaseStarted withResult: self.
+aTestCase runCase.
+aTestCase announce: TestCaseEnded withResult: self.
+self addPass: aTestCase ] in TestResult>>runCaseForDebug:
+BlockClosure>>on:do:
+TestResult>>runCaseForDebug:
+[ result runCaseForDebug: self ] in LOGameTest(TestCase)>>debug
+BlockClosure>>ensure:
+LOGameTest(TestCase)>>debug
+LOGameTest class(TestCase class)>>debug:
+NautilusUI class>>runTestForAMethod:notifying:
+NautilusUI>>runTestForAMethod:notifying:
+[ :each | 
+each isTestMethod
+	ifTrue: [ self runTestForAMethod: each notifying: aBoolean ] ] in NautilusUI(AbstractNautilusUI)>>runTestForMethods:notifying:
+OrderedCollection>>do:
+NautilusUI(AbstractNautilusUI)>>runTestForMethods:notifying:
+[ target runTestForMethods: selectedMethods notifying: true ] in MethodWidget class>>elementsMenu:
+BlockClosure>>cull:
+[ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ selArgCount = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: evt) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+MenuMorph(Morph)>>processEvent:using:
+MenuMorph(Morph)>>processEvent:
+MenuMorph>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
