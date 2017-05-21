@@ -56453,3 +56453,5242 @@ false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
 Processor terminateActive ] in BlockClosure>>newProcess
 -------------------------------------------------------------------------------
 
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Nyan>>variable
+15 May 2017 1:30:15.09379 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan(Object)>>doesNotUnderstand: #variable
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+		aMessage: 	variable
+		exception: 	MessageNotUnderstood: Nyan>>variable
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		variable: 	nil
+		something: 	nil
+
+
+Nyan>>playBall
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		variable: 	nil
+		something: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	a Nyan
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Transcript ...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Tr...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Transcr...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| hoge |
+	hoge := Nyan new.
+	hoge addHoge: 'test'.
+	^ Transcript sho...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(104.0@263.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(104.0@263.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	1279538
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(199.0@375.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(104.0@263.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(104.0@263.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(508@487.0) corner: (524@503.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(508@487.0) corner: (524@503.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(508@487) mouseOver nil nil]
+		targetOffset: 	(54.0@9.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1279036 508 487 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Sys...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(508@487.0) corner: (524@503.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(508@487.0) corner: (524@503.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(508@487) mouseOver nil nil]
+		targetOffset: 	(54.0@9.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1279036 508 487 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+Nyan(Object)>>doesNotUnderstand: #variable
+Nyan>>playBall
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Nyan>>variable
+15 May 2017 1:32:02.799415 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan(Object)>>doesNotUnderstand: #variable
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+		aMessage: 	variable
+		exception: 	MessageNotUnderstood: Nyan>>variable
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		variable: 	nil
+		something: 	nil
+
+
+Nyan>>playBall
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		variable: 	nil
+		something: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	a Nyan
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Transcript ...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Tr...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge: ''test''.
+Transcr...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| hoge |
+	hoge := Nyan new.
+	hoge addHoge: 'test'.
+	^ Transcript sho...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(336.0@338.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(336.0@338.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	1387243
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(336.0@338.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(336.0@338.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(336.0@338.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(645@450.0) corner: (661@466.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(645@450.0) corner: (661@466.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(645@450) mouseOver nil nil]
+		targetOffset: 	(336.0@338.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1386301 645 450 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Nau...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(645@450.0) corner: (661@466.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(645@450.0) corner: (661@466.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(645@450) mouseOver nil nil]
+		targetOffset: 	(336.0@338.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1386301 645 450 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+Nyan(Object)>>doesNotUnderstand: #variable
+Nyan>>playBall
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Nyan>>addHoge
+15 May 2017 1:41:44.502611 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan(Object)>>doesNotUnderstand: #addHoge
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+		aMessage: 	addHoge
+		exception: 	MessageNotUnderstood: Nyan>>addHoge
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		variable: 	333
+		something: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	a Nyan
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge something: ''test''.
+"...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new.
+hoge addHoge something: ''...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge something: ''test'...etc...
+	Receiver's instance variables: 
+		ast: 	<<error during printing>>
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(197.0@141.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(197.0@141.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	1968962
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(196.0@141.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(197.0@141.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@88)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@88)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(197.0@141.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(505@253.0) corner: (521@269.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(505@253.0) corner: (521@269.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(505@253) mouseOver nil nil]
+		targetOffset: 	(197.0@141.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1936395 505 253 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Sys...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(505@253.0) corner: (521@269.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(505@253.0) corner: (521@269.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(505@253) mouseOver nil nil]
+		targetOffset: 	(197.0@141.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1936395 505 253 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(505@253.0) corner: (521@269.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(505@253.0) corner: (521@269.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(505@253) mouseOver nil nil]
+		targetOffset: 	(197.0@141.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1936395 505 253 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+Nyan(Object)>>doesNotUnderstand: #addHoge
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Nyan>>addHoge
+15 May 2017 1:46:57.114241 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan(Object)>>doesNotUnderstand: #addHoge
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+		aMessage: 	addHoge
+		exception: 	MessageNotUnderstood: Nyan>>addHoge
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		variable: 	333
+		something: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	a Nyan
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge
+	something: ''nyn''
+ "...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new.
+hoge addHoge
+	something: '...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new.
+hoge addHoge
+	something: ''nyn'...etc...
+	Receiver's instance variables: 
+		ast: 	<<error during printing>>
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(489.0@122.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(489.0@122.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	2281557
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(489.0@122.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(489.0@122.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(939040000) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(489.0@122.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(798@234.0) corner: (814@250.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(798@234.0) corner: (814@250.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(798@234) mouseOver nil nil]
+		targetOffset: 	(489.0@122.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 2224708 798 234 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Sys...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(798@234.0) corner: (814@250.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(798@234.0) corner: (814@250.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(798@234) mouseOver nil nil]
+		targetOffset: 	(489.0@122.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 2224708 798 234 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(798@234.0) corner: (814@250.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(798@234.0) corner: (814@250.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(798@234) mouseOver nil nil]
+		targetOffset: 	(489.0@122.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 2224708 798 234 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+Nyan(Object)>>doesNotUnderstand: #addHoge
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Error: Nyan cannot have variable sized instances
+21 May 2017 10:24:06.518688 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan class(Object)>>error:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		aString: 	'Nyan cannot have variable sized instances'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+Nyan class(Behavior)>>basicNew:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		sizeRequested: 	432
+		ec: 	#'bad receiver'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+Nyan class(Behavior)>>new:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		sizeRequested: 	432
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	nil
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new: 432.
+"Transcript show: hoge playBal...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new: 432.
+"Transcript show: hog...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new: 432.
+"Transcript show: hoge pla...etc...
+	Receiver's instance variables: 
+		ast: 	<<error during printing>>
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(231.0@125.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(231.0@125.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	679624
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(231.0@125.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(231.0@125.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(231.0@125.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(532@228.0) corner: (548@244.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(532@228.0) corner: (548@244.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(540@237) mouseOver nil nil]
+		targetOffset: 	(231.0@125.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	Form(16x16x8)
+		temporaryCursorOffset: 	(-8@ -9)
+		hardwareCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r...etc...
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 665064 540 237 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Sys...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+
+--- The full stack ---
+Nyan class(Object)>>error:
+Nyan class(Behavior)>>basicNew:
+Nyan class(Behavior)>>new:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Error: Nyan cannot have variable sized instances
+21 May 2017 10:24:43.6119 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+Nyan class(Object)>>error:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		aString: 	'Nyan cannot have variable sized instances'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+Nyan class(Behavior)>>basicNew:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		sizeRequested: 	432
+		ec: 	#'bad receiver'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+Nyan class(Behavior)>>new:
+	Receiver: Nyan
+	Arguments and temporary variables: 
+		sizeRequested: 	432
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#bark:->Nyan>>#bark: #initialize->Nyan>>#initial...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Nyan
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#NyanGroup
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	nil
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := (Nyan new: 432).
+"Transcript show: hoge playB...etc...
+		itsSelection: 	a Text for '| hoge |
+hoge := (Nyan new: 432).
+"Transcript show: h...etc...
+		itsSelectionString: 	'| hoge |
+hoge := (Nyan new: 432).
+"Transcript show: hoge p...etc...
+	Receiver's instance variables: 
+		ast: 	<<error during printing>>
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(71.0@34.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(71.0@34.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	716722
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(368.0@19.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(71.0@34.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(135004672) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(71.0@34.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(669@122.0) corner: (685@138.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(669@122.0) corner: (685@138.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(677@131) mouseOver nil nil]
+		targetOffset: 	(71.0@34.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	Form(16x16x8)
+		temporaryCursorOffset: 	(-8@ -9)
+		hardwareCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r...etc...
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 707929 677 131 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a GLM...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+
+--- The full stack ---
+Nyan class(Object)>>error:
+Nyan class(Behavior)>>basicNew:
+Nyan class(Behavior)>>new:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: ThreadSafeTranscript>>temp
+21 May 2017 10:34:04.984322 am
+
+VM: Mac OS - intel - 1094 - CoInterpreter VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+StackToRegisterMappingCogit VMMaker.oscog-HolgerHansPeterFreyther.1880 uuid: 16138eb3-2390-40f5-a6c8-15f0494936f8 Oct 10 2016
+git@github.com:pharo-project/pharo-vm.git Commit: 06744effac0f0aa3b4b32e17636448f9d51d6707 Date: 2016-09-30 08:40:43 +0200 By: GitHub <noreply@github.com> 
+
+Image: Pharo5.0 [Latest update: #50771]
+
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #temp
+	Receiver: Transcript
+	Arguments and temporary variables: 
+		aMessage: 	temp
+		exception: 	MessageNotUnderstood: ThreadSafeTranscript>>temp
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(783463168) a RubPluggableTextMorph...etc...
+		announceur: 	an Announcer
+		stream: 	a WriteStream
+		accessSemaphore: 	a Mutex
+		deferredClear: 	false
+		deferredEndEntry: 	false
+		stepContents: 	'
+Nyan>>getScore (statements is Undeclared) 
+'
+
+
+Nyan>>getScore
+	Receiver: a Nyan
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		temp: 	'enjoy'
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		hoge: 	a Nyan
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| hoge |
+hoge := Nyan new.
+hoge playBall.
+hoge getScore.
+'
+		itsSelection: 	a Text for '| hoge |
+hoge := Nyan new.
+hoge playBall.
+hoge getSco...etc...
+		itsSelectionString: 	'| hoge |
+hoge := Nyan new.
+hoge playBall.
+hoge getScore.
+'...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| hoge |
+	hoge := Nyan new.
+	hoge playBall.
+	^ hoge getScore
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[ :result | result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(263286784)
+		selectorChooser: 	nil
+		notificationStrategy: 	a RubTextInsertionStrategy
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(263286784)
+		secondArg: 	a RubEditingArea(263286784)
+		thirdArg: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	272
+		numArgs: 	1
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+		aBlock: 	[ :l | l completeMatch: self buffer: aBuffer ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		listeners: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+Set>>do:
+	Receiver: a Set(#methodStringsContainingIt on Meta + Shift + E do [ :target | target editor methodSt...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andD...etc...
+		index: 	6
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#methodStringsContainingIt on Meta + Shift + E do [ :target | t...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aMatchListener: 	an Array(aKMCategoryTarget(#RubSmalltalkEditor) a KMDispatcher)...etc...
+		aBlock: 	[ ^ self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#MacOSX->a KMStorage #Windows->a KMStorage #all->a KMSt...etc...
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: aKMCategoryTarget(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^ self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(263286784)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(263286784)
+
+
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+		aTarget: 	aKMCategoryTarget(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCategoryT...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(aKMCategoryTarget(nil) aKMCategoryTarget(#RubTextEditor) aKMCat...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+		association: 	nil
+		match: 	nil
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keystroke '<Cmd-d>'])
+	Receiver's instance variables: 
+		realTarget: 	nil
+		morph: 	a RubEditingArea(263286784)
+		targetSelector: 	#yourself
+		directKeymaps: 	nil
+		perInstanceCategories: 	nil
+
+
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstan...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KmGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keystroke '<Cmd-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(aKMCategoryTarget(#RubTextEditor) aKMCategoryTarget(#RubSmalltal...etc...
+		morph: 	a RubEditingArea(263286784)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		evt: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(648736768) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(306.0@54.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(648736768) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(306.0@54.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keystroke '<Cmd-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(263286784)
+	Receiver's instance variables: 
+		timeStamp: 	1278095
+		source: 	a HandMorph(757873920)
+		windowIndex: 	nil
+		type: 	#keystroke
+		buttons: 	64
+		position: 	(306.0@54.0)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(648736768) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(306.0@54.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(263286784)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (690@107)
+		owner: 	a TransformWithLayoutMorph(173341952)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(648736768) a RubCursor(207316992...etc...
+		fullBounds: 	(0@0) corner: (690@107)
+		color: 	Color transparent
+		extension: 	a MorphExtension (86348032) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(300652288)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(207316992)
+		segments: 	an OrderedCollection()
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	(306.0@54.0)
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(607@157.0) corner: (623@173.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(607@157.0) corner: (623@173.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(615@166) mouseOver nil nil]
+		targetOffset: 	(306.0@54.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	Form(16x16x8)
+		temporaryCursorOffset: 	(-8@ -9)
+		hardwareCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r...etc...
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1241996 615 166 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		aBlock: 	[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	ha...etc...
+		priorWorld: 	a WorldMorph(562956288) [world]
+		priorHand: 	a HandMorph(757873920)
+		priorEvent: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@737)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a StandardWindow(270161408) a Sys...etc...
+		fullBounds: 	(0@0) corner: (976@737)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (948355072) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.063 g: 0.063 b: 0.063 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(757873920)
+	Arguments and temporary variables: 
+		result: 	nil
+		anEvent: 	[keystroke '<Cmd-d>']
+		focusHolder: 	a RubEditingArea(263286784)
+		aBlock: 	[ self keyboardFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(607@157.0) corner: (623@173.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(607@157.0) corner: (623@173.0)
+		color: 	Color blue
+		extension: 	a MorphExtension (610345728)
+		mouseFocus: 	nil
+		keyboardFocus: 	a RubEditingArea(263286784)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(615@166) mouseOver nil nil]
+		targetOffset: 	(306.0@54.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	Form(16x16x8)
+		temporaryCursorOffset: 	(-8@ -9)
+		hardwareCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r...etc...
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 1241996 615 166 0 0 0 1)
+		lastKeyScanCode: 	2
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	8
+
+
+
+--- The full stack ---
+ThreadSafeTranscript(Object)>>doesNotUnderstand: #temp
+Nyan>>getScore
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+BlockClosure>>cull:
+BlockClosure>>cull:cull:
+BlockClosure>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | entry onMatchWith: anEventBuffer notify: aMatchListener andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+aTarget
+	verifyMatchWith: anEventBuffer
+	notifying: self
+	thenDoing: [ ^ self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch | 
+targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+aKeyboardEvent wasHandled
+	ifTrue: [ ^ self ] ] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(RubAbstractTextArea)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ [ World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
