@@ -1,1 +1,0 @@
-Transcript show: 'nya-n';cr;show: 'hogera'.

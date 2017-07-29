@@ -1,0 +1,1 @@
+Gofer it    smalltalkhubUser: 'zeroflag' project: 'Teapot';    configuration;    loadStable.Teapot on    GET: '/welcome' -> 'Hello World!';    start.
